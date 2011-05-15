@@ -1,0 +1,5 @@
+serverName: 'localhost:1433'
+databaseName: Minecraft
+level:
+    log: ALL
+    send: ALL

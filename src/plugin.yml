@@ -1,0 +1,5 @@
+name: SimpleGroups
+main: edgruberman.bukkit.simplegroups.Main
+version: %VERSION%
+depend: [MessageManager]
+author: EdGruberman (ed@rjump.com)
