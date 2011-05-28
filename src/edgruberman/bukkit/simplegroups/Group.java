@@ -11,10 +11,6 @@ public class Group extends Member {
         super(name);
     }
     
-    public void load() {
-        this.members = Main.getMembers(this);
-    }
-    
     public List<Member> getMembers() {
         return this.members;
     }
@@ -24,5 +20,9 @@ public class Group extends Member {
             if (member.getName().equals(name)) return true;
         }
         return false;
+    }
+    
+    protected void load() {
+        this.members = Main.getMembers(this);
     }
 }

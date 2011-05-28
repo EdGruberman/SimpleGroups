@@ -1,5 +1,13 @@
 name: SimpleGroups
-main: edgruberman.bukkit.simplegroups.Main
+description: Database group management API
 version: %VERSION%
 depend: [MessageManager]
 author: EdGruberman (ed@rjump.com)
+main: edgruberman.bukkit.simplegroups.Main
+commands:
+    group:
+        description: Manage groups.
+        usage: |
+            /<command> <Group> reload - Refresh members from database for <Group>.
+            /<command> <Group> (add|remove) <Player> - Add or remove <Player> as member to <Group>.
+            /<command> <Group> (create|delete) - Create new or delete existing <Group>.

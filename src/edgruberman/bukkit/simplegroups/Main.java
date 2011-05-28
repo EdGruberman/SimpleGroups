@@ -42,6 +42,8 @@ public class Main extends org.bukkit.plugin.java.JavaPlugin {
             Main.messageManager.log(MessageLevel.SEVERE, "Unable to connect to database.", e);
         }
         
+        new CommandManager(this);
+        
         Main.messageManager.log("Plugin Enabled");
     }
     
